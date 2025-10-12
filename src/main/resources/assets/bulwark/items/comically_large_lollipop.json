@@ -1,0 +1,23 @@
+{
+     "model": {
+          "type": "select",
+          "cases": [
+               {
+                    "model": {
+                         "type": "model",
+                         "model": "bulwark:item/lollipop_gui"
+                    },
+                    "when": [
+                         "gui",
+                         "ground",
+                         "fixed"
+                    ]
+               }
+          ],
+          "fallback": {
+               "type": "model",
+               "model": "bulwark:item/lollipop_handheld"
+          },
+          "property": "display_context"
+     }
+}

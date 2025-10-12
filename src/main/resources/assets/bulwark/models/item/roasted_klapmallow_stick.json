@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "bulwark:item/roasted_klapmallow_stick"
+  }
+}

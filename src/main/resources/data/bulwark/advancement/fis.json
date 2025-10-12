@@ -1,0 +1,28 @@
+{
+     "display": {
+          "icon": {
+               "id": "minecraft:cod_bucket"
+          },
+          "title": {
+               "translate": "advancement.bulwark.fis"
+          },
+          "description": {
+               "translate": "advancement.bulwark.fis.desc"
+          },
+          "frame": "goal",
+          "hidden": true
+     },
+     "parent": "minecraft:husbandry/tactical_fishing",
+     "criteria": {
+          "obtain_cleaver": {
+               "trigger": "minecraft:inventory_changed",
+               "conditions": {
+                    "items": [
+                         {
+                              "items": "bulwark:poisoned_fish"
+                         }
+                    ]
+               }
+          }
+     }
+}

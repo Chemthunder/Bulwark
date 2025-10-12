@@ -1,0 +1,20 @@
+{
+     "type": "minecraft:block",
+     "pools": [
+          {
+               "rolls": 1,
+               "entries": [
+                    {
+                         "type": "minecraft:item",
+                         "name": "bulwark:metallic_tainted_glass",
+                         "functions": [],
+                         "conditions": [
+                              {
+                                   "condition": "minecraft:survives_explosion"
+                              }
+                         ]
+                    }
+               ]
+          }
+     ]
+}

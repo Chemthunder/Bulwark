@@ -1,0 +1,8 @@
+{
+     "type": "minecraft:stonecutting",
+     "ingredient": "#bulwark:mask",
+     "result": {
+          "id": "bulwark:silly_mask",
+          "count": 1
+     }
+}

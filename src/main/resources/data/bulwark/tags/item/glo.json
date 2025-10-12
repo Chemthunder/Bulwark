@@ -1,0 +1,10 @@
+{
+     "replace": false,
+     "values": [
+          "bulwark:klaproth_tube",
+          "bulwark:silly_klaproth_tube",
+          "bulwark:red_klaproth_tube",
+          "bulwark:sculk_klaproth_tube",
+          "bulwark:luminant_klaproth_tube"
+     ]
+}

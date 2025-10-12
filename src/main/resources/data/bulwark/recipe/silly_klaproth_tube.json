@@ -1,0 +1,20 @@
+{
+     "type": "minecraft:crafting_shaped",
+     "pattern": [
+          " GI",
+          " KB",
+          " P "
+     ],
+     "key": {
+          "K": "bulwark:klaproth_candy",
+          "G": "minecraft:iron_ingot",
+          "I": "minecraft:iron_nugget",
+          "P": "minecraft:pink_dye",
+          "B": "minecraft:blue_dye"
+     },
+     "result": {
+          "id": "bulwark:silly_klaproth_tube",
+          "count": 1
+     },
+     "show_notification": true
+}

@@ -1,0 +1,29 @@
+{
+     "description": {
+          "translate": "enchantment.bulwark.tracing"
+     },
+     "supported_items": [
+          "bulwark:eclipse_mask",
+          "bulwark:faker_mask",
+          "bulwark:red_shade_mask",
+          "bulwark:silly_mask",
+          "bulwark:warden_mask"
+     ],
+     "weight": 2,
+     "max_level": 1,
+     "min_cost": {
+          "base": 2,
+          "per_level_above_first": 0
+     },
+     "max_cost": {
+          "base": 2,
+          "per_level_above_first": 0
+     },
+     "anvil_cost": 4,
+     "slots": [
+          "head"
+     ],
+     "effects": {
+          "bulwark:tracing": {}
+     }
+}

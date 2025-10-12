@@ -1,0 +1,8 @@
+{
+     "type": "minecraft:campfire_cooking",
+     "ingredient": "bulwark:klapmallow",
+     "result": {
+          "id": "bulwark:roasted_klapmallow"
+     },
+     "cookingtime": 30
+}

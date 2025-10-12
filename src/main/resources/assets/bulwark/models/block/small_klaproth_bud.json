@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "bulwark:block/small_klaproth_bud"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "bulwark:block/disrupter_on_top",
+    "side": "bulwark:block/klaproth_pillar_side"
+  }
+}

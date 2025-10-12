@@ -1,0 +1,30 @@
+{
+     "type": "minecraft:crafting_shaped",
+     "pattern": [
+          "DDD",
+          "DKD",
+          "DDD"
+     ],
+     "key": {
+          "K": "bulwark:klaproth",
+          "D": [
+               "minecraft:acacia_planks",
+               "minecraft:bamboo_planks",
+               "minecraft:birch_planks",
+               "minecraft:cherry_planks",
+               "minecraft:crimson_planks",
+               "minecraft:dark_oak_planks",
+               "minecraft:jungle_planks",
+               "minecraft:mangrove_planks",
+               "minecraft:oak_planks",
+               "minecraft:pale_oak_planks",
+               "minecraft:spruce_planks",
+               "minecraft:warped_planks"
+          ]
+     },
+     "result": {
+          "id": "minecraft:jukebox",
+          "count": 1
+     },
+     "show_notification": true
+}

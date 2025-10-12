@@ -1,0 +1,18 @@
+{
+     "type": "minecraft:crafting_shaped",
+     "pattern": [
+          "DKD",
+          "RKR",
+          "DKD"
+     ],
+     "key": {
+          "K": "bulwark:klaproth",
+          "D": "minecraft:polished_deepslate",
+          "R": "minecraft:repeater"
+     },
+     "result": {
+          "id": "bulwark:restrictor",
+          "count": 1
+     },
+     "show_notification": false
+}

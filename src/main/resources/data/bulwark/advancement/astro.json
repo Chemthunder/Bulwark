@@ -1,0 +1,28 @@
+{
+     "display": {
+          "icon": {
+               "id": "bulwark:klaproth_tube"
+          },
+          "title": {
+               "translate": "advancement.bulwark.astro"
+          },
+          "description": {
+               "translate": "advancement.bulwark.astro.desc"
+          },
+          "frame": "goal",
+          "hidden": true
+     },
+     "parent": "bulwark:root",
+     "criteria": {
+          "obtain_cleaver": {
+               "trigger": "minecraft:inventory_changed",
+               "conditions": {
+                    "items": [
+                         {
+                              "items": "#bulwark:glo"
+                         }
+                    ]
+               }
+          }
+     }
+}

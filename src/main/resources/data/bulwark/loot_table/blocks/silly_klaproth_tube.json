@@ -1,0 +1,21 @@
+{
+     "type": "minecraft:block",
+     "pools": [
+          {
+               "rolls": 1,
+               "entries": [
+                    {
+                         "type": "minecraft:item",
+                         "name": "bulwark:silly_klaproth_tube",
+                         "functions": [
+                         ],
+                         "conditions": [
+                              {
+                                   "condition": "minecraft:survives_explosion"
+                              }
+                         ]
+                    }
+               ]
+          }
+     ]
+}

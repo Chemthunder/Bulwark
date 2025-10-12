@@ -1,0 +1,17 @@
+{
+     "type": "minecraft:crafting_shaped",
+     "pattern": [
+          "GGG",
+          "GKG",
+          "GGG"
+     ],
+     "key": {
+          "G": "minecraft:tinted_glass",
+          "K": "bulwark:klaproth"
+     },
+     "result": {
+          "id": "bulwark:tainted_glass",
+          "count": 8
+     },
+     "show_notification": false
+}

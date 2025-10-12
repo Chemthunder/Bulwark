@@ -1,0 +1,18 @@
+{
+     "type": "minecraft:crafting_shaped",
+     "pattern": [
+          "  S",
+          " K ",
+          "P  "
+     ],
+     "key": {
+          "K": "bulwark:klaproth",
+          "P": "minecraft:paper",
+          "S": "minecraft:sugar"
+     },
+     "result": {
+          "id": "bulwark:klaproth_candy",
+          "count": 2
+     },
+     "show_notification": true
+}

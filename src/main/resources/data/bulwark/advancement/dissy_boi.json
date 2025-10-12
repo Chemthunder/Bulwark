@@ -1,0 +1,28 @@
+{
+     "display": {
+          "icon": {
+               "id": "bulwark:disrupter"
+          },
+          "title": {
+               "translate": "advancement.bulwark.dissy"
+          },
+          "description": {
+               "translate": "advancement.bulwark.dissy.desc"
+          },
+          "frame": "goal",
+          "hidden": true
+     },
+     "parent": "bulwark:clappy",
+     "criteria": {
+          "obtain_cleaver": {
+               "trigger": "minecraft:inventory_changed",
+               "conditions": {
+                    "items": [
+                         {
+                              "items": "bulwark:disrupter"
+                         }
+                    ]
+               }
+          }
+     }
+}

@@ -1,0 +1,16 @@
+{
+     "variants": {
+          "axis=x": {
+               "model": "bulwark:block/klaproth_pillar_horizontal",
+               "x": 90,
+               "y": 90
+          },
+          "axis=y": {
+               "model": "bulwark:block/klaproth_pillar"
+          },
+          "axis=z": {
+               "model": "bulwark:block/klaproth_pillar_horizontal",
+               "x": 90
+          }
+     }
+}

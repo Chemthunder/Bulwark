@@ -1,0 +1,14 @@
+{
+     "type": "minecraft:crafting_shapeless",
+     "category": "equipment",
+     "ingredients": [
+          "bulwark:klaproth",
+          "bulwark:klaproth",
+          "bulwark:klaproth",
+          "bulwark:klaproth"
+     ],
+     "result": {
+          "id": "bulwark:klaproth_block",
+          "count": 1
+     }
+}

@@ -1,0 +1,18 @@
+{
+     "type": "minecraft:crafting_shaped",
+     "pattern": [
+          " GI",
+          " K ",
+          " G "
+     ],
+     "key": {
+          "K": "bulwark:klaproth",
+          "G": "minecraft:tinted_glass",
+          "I": "minecraft:iron_nugget"
+     },
+     "result": {
+          "id": "bulwark:klaproth_tube",
+          "count": 1
+     },
+     "show_notification": true
+}

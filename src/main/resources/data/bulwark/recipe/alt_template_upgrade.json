@@ -1,0 +1,18 @@
+{
+     "type": "minecraft:crafting_shaped",
+     "category": "misc",
+     "pattern": [
+          "NTN",
+          "NKN",
+          "NNN"
+     ],
+     "key": {
+          "N": "minecraft:netherrack",
+          "K": "bulwark:klaproth",
+          "T": "minecraft:netherite_upgrade_smithing_template"
+     },
+     "result": {
+          "id": "minecraft:netherite_upgrade_smithing_template",
+          "count": 2
+     }
+}

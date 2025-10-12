@@ -1,0 +1,10 @@
+{
+     "replace": false,
+     "values": [
+          "bulwark:eclipse_mask",
+          "bulwark:warden_mask",
+          "bulwark:faker_mask",
+          "bulwark:silly_mask",
+          "bulwark:red_shade_mask"
+     ]
+}

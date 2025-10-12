@@ -1,0 +1,11 @@
+{
+     "type": "minecraft:crafting_shapeless",
+     "ingredients": [
+          "minecraft:cod_bucket",
+          "bulwark:klaproth"
+     ],
+     "result": {
+          "id": "bulwark:poisoned_fish",
+          "count": 1
+     }
+}

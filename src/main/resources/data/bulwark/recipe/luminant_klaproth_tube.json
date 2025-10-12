@@ -1,0 +1,19 @@
+{
+     "type": "minecraft:crafting_shaped",
+     "pattern": [
+          " GI",
+          " K ",
+          " D "
+     ],
+     "key": {
+          "K": "bulwark:klaproth",
+          "G": "minecraft:iron_ingot",
+          "I": "minecraft:iron_nugget",
+          "D": "minecraft:glowstone_dust"
+     },
+     "result": {
+          "id": "bulwark:luminant_klaproth_tube",
+          "count": 1
+     },
+     "show_notification": true
+}

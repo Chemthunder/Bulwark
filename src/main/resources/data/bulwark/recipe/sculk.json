@@ -1,0 +1,19 @@
+{
+     "type": "minecraft:crafting_shaped",
+     "pattern": [
+          " GI",
+          " K ",
+          " S "
+     ],
+     "key": {
+          "K": "bulwark:klaproth",
+          "G": "minecraft:iron_ingot",
+          "I": "minecraft:iron_nugget",
+          "S": "minecraft:sculk"
+     },
+     "result": {
+          "id": "bulwark:sculk_klaproth_tube",
+          "count": 1
+     },
+     "show_notification": true
+}

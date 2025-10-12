@@ -1,0 +1,18 @@
+{
+     "type": "minecraft:crafting_shaped",
+     "category": "misc",
+     "pattern": [
+          "NTN",
+          "NKN",
+          "NNN"
+     ],
+     "key": {
+          "N": "minecraft:cobblestone",
+          "K": "bulwark:klaproth",
+          "T": "minecraft:coast_armor_trim_smithing_template"
+     },
+     "result": {
+          "id": "minecraft:coast_armor_trim_smithing_template",
+          "count": 2
+     }
+}

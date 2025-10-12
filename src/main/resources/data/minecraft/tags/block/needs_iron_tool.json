@@ -1,0 +1,18 @@
+{
+     "values": [
+          "bulwark:disrupter",
+          "bulwark:cut_klaproth_block",
+          "bulwark:klaproth_block",
+          "bulwark:small_klaproth_bud",
+          "bulwark:medium_klaproth_bud",
+          "bulwark:large_klaproth_bud",
+          "bulwark:klaproth_cluster",
+          "bulwark:klaproth_tube",
+          "bulwark:silly_klaproth_tube",
+          "bulwark:red_klaproth_tube",
+          "bulwark:sculk_klaproth_tube",
+          "bulwark:luminant_klaproth_tube",
+          "bulwark:klaproth_pillar",
+          "bulwark:restrictor"
+     ]
+}

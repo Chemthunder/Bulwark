@@ -1,0 +1,9 @@
+{
+     "type": "minecraft:stonecutting",
+     "ingredient": [
+          "bulwark:klaproth_candy"
+     ],
+     "result": {
+          "id": "bulwark:klapmallow"
+     }
+}

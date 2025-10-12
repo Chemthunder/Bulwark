@@ -1,0 +1,30 @@
+{
+     "variants": {
+          "facing=down": {
+               "model": "bulwark:block/klaproth_tube_sculk_up",
+               "x": 180
+          },
+          "facing=east": {
+               "model": "bulwark:block/klaproth_tube_sculk_up",
+               "x": 90,
+               "y": 90
+          },
+          "facing=north": {
+               "model": "bulwark:block/klaproth_tube_sculk_up",
+               "x": 90
+          },
+          "facing=south": {
+               "model": "bulwark:block/klaproth_tube_sculk_up",
+               "x": 90,
+               "y": 180
+          },
+          "facing=up": {
+               "model": "bulwark:block/klaproth_tube_sculk_up"
+          },
+          "facing=west": {
+               "model": "bulwark:block/klaproth_tube_sculk_up",
+               "x": 90,
+               "y": 270
+          }
+     }
+}

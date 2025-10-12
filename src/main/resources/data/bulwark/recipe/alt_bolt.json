@@ -1,0 +1,21 @@
+{
+     "type": "minecraft:crafting_shaped",
+     "category": "misc",
+     "pattern": [
+          "NTN",
+          "NKN",
+          "NNN"
+     ],
+     "key": {
+          "N": [
+               "minecraft:copper_block",
+               "minecraft:waxed_copper_block"
+          ],
+          "K": "bulwark:klaproth",
+          "T": "minecraft:bolt_armor_trim_smithing_template"
+     },
+     "result": {
+          "id": "minecraft:bolt_armor_trim_smithing_template",
+          "count": 2
+     }
+}

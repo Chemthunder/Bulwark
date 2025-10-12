@@ -1,0 +1,11 @@
+{
+     "type": "minecraft:crafting_shapeless",
+     "ingredients": [
+          "minecraft:iron_nugget",
+          "bulwark:tainted_glass"
+     ],
+     "result": {
+          "id": "bulwark:metallic_tainted_glass",
+          "count": 4
+     }
+}

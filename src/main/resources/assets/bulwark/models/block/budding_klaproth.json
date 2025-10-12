@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "bulwark:block/budding_klaproth_top",
+    "bottom": "bulwark:block/budding_klaproth_top",
+    "side": "bulwark:block/budding_klaproth_side"
+  }
+}

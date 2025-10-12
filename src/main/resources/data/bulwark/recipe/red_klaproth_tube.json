@@ -1,0 +1,19 @@
+{
+     "type": "minecraft:crafting_shaped",
+     "pattern": [
+          " NI",
+          " K ",
+          " G "
+     ],
+     "key": {
+          "K": "bulwark:klaproth",
+          "G": "minecraft:redstone",
+          "I": "minecraft:iron_nugget",
+          "N": "minecraft:iron_ingot"
+     },
+     "result": {
+          "id": "bulwark:red_klaproth_tube",
+          "count": 1
+     },
+     "show_notification": true
+}

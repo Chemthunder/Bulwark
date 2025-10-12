@@ -1,0 +1,11 @@
+{
+     "type": "minecraft:crafting_shapeless",
+     "ingredients": [
+          "bulwark:klapmallow",
+          "minecraft:stick"
+     ],
+     "result": {
+          "id": "bulwark:klapmallow_stick",
+          "count": 1
+     }
+}
