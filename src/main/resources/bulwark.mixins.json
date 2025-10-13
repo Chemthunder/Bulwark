@@ -1,24 +1,25 @@
 {
-     "required": true,
-     "package": "bul.chemthunder.bulwark.mixin",
-     "compatibilityLevel": "JAVA_21",
-     "mixins": [
-          "BoneMealMixin",
-          "BrushItemMixin",
-          "EyeOfEnderItemMixin",
-          "GlassBottleMixin",
-          "ItemEntityMixin",
-          "PlayerEntityMixin",
-          "ServerPlayerEntityMixin"
-     ],
-     "client": [
-          "client.AbstractClientPlayerEntityMixin",
-          "client.InGameHudMixin"
-     ],
-     "injectors": {
-          "defaultRequire": 1
-     },
-     "overwrites": {
-          "requireAnnotations": true
-     }
+  "required": true,
+  "package": "bul.chemthunder.bulwark.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BoneMealMixin",
+    "BottleMixin",
+    "BrushItemMixin",
+    "EyeOfEnderItemMixin",
+    "GlassBottleMixin",
+    "ItemEntityMixin",
+    "PlayerEntityMixin",
+    "ServerPlayerEntityMixin"
+  ],
+  "client": [
+    "client.AbstractClientPlayerEntityMixin",
+    "client.InGameHudMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
 }

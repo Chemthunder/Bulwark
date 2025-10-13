@@ -29,14 +29,15 @@ public abstract class BottleMixin extends Item {
         Hand hand = player.getActiveHand();
         ItemStack stack = player.getStackInHand(hand);
 
-        if (world.getBlockState(pos).isOf(BulwarkBlocks.ILL_SUBSTANCE)) {
-            stack.decrement(1);
-            player.giveItemStack(BulwarkItems.ILL_BOTTLE.getDefaultStack());
-            player.playSound(SoundEvents.ITEM_HONEYCOMB_WAX_ON);
-            player.playSound(SoundEvents.BLOCK_CONDUIT_AMBIENT_SHORT);
-            world.setBlockState(pos, Blocks.AIR.getDefaultState());
+        if (player != null) {
+            if (world.getBlockState(pos).isOf(BulwarkBlocks.ILL_SUBSTANCE)) {
+                stack.decrement(1);
+                player.giveItemStack(BulwarkItems.ILL_BOTTLE.getDefaultStack());
+                player.playSound(SoundEvents.ITEM_HONEYCOMB_WAX_ON);
+                player.playSound(SoundEvents.BLOCK_CONDUIT_AMBIENT_SHORT);
+                world.setBlockState(pos, Blocks.AIR.getDefaultState());
+            }
         }
-
         return super.useOnBlock(context);
     }
 }
