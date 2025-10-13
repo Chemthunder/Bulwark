@@ -18,6 +18,7 @@ public interface BulwarkMasks {
             .fireproof()
             .maxCount(1)
             .equippableUnswappable(EquipmentSlot.HEAD)
+            .attributeModifiers(EclipseMaskItem.createAttributeModifiers())
     );
 
     Item FAKER_MASK = create("faker_mask", EclipseMaskItem::new, new AcornItemSettings()
@@ -25,6 +26,7 @@ public interface BulwarkMasks {
             .fireproof()
             .maxCount(1)
             .equippableUnswappable(EquipmentSlot.HEAD)
+            .attributeModifiers(EclipseMaskItem.createAttributeModifiers())
     );
 
     Item SILLY_MASK = create("silly_mask", EclipseMaskItem::new, new AcornItemSettings()
@@ -32,6 +34,7 @@ public interface BulwarkMasks {
             .fireproof()
             .maxCount(1)
             .equippableUnswappable(EquipmentSlot.HEAD)
+            .attributeModifiers(EclipseMaskItem.createAttributeModifiers())
     );
 
     Item WARDEN_MASK = create("warden_mask", EclipseMaskItem::new, new AcornItemSettings()
@@ -39,6 +42,7 @@ public interface BulwarkMasks {
             .fireproof()
             .maxCount(1)
             .equippableUnswappable(EquipmentSlot.HEAD)
+            .attributeModifiers(EclipseMaskItem.createAttributeModifiers())
     );
 
     static Item create(String name, Function<Item.Settings, Item> factory, Item.Settings settings) {

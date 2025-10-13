@@ -33,8 +33,6 @@ public class ActinismEffect extends StatusEffect {
         return duration % i == 0;
     }
 
-
-
     @Override
     public void applyInstantEffect(ServerWorld world, @Nullable Entity effectEntity, @Nullable Entity attacker, LivingEntity entity, int amplifier, double proximity) {
         entity.playSound(SoundEvents.BLOCK_AMETHYST_BLOCK_RESONATE);

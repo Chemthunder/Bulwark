@@ -109,7 +109,7 @@ public abstract class InGameHudMixin {
                     target = "Lnet/minecraft/client/gui/DrawContext;drawGuiTexture(Ljava/util/function/Function;Lnet/minecraft/util/Identifier;IIII)V"
             )}
     )
-    private void gilded$unclear(DrawContext instance, Function<Identifier, RenderLayer> renderLayers, Identifier sprite, int x, int y, int width, int height, Operation<Void> original) {
+    private void bulwark$instability(DrawContext instance, Function<Identifier, RenderLayer> renderLayers, Identifier sprite, int x, int y, int width, int height, Operation<Void> original) {
         Entity camera = MinecraftClient.getInstance().getCameraEntity();
         if (camera instanceof LivingEntity living && living.hasStatusEffect(BulwarkStatusEffects.INSTABILITY)) {
             original.call(instance, renderLayers, INSTABILITY_HEART, x, y, width, height);
@@ -118,6 +118,4 @@ public abstract class InGameHudMixin {
 
         original.call(instance, renderLayers, sprite, x, y, width, height);
     }
-
-
 }

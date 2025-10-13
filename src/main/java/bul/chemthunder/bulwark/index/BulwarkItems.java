@@ -24,6 +24,7 @@ public interface BulwarkItems {
 
             .equippableUnswappable(EquipmentSlot.HEAD)
             .enchantable(5)
+            .attributeModifiers(EclipseMaskItem.createAttributeModifiers())
     );
 
     Item OPERATOR_KEY = create("operator_key", OperatorKey::new, new AcornItemSettings()

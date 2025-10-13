@@ -45,6 +45,9 @@
      "enchantment.bulwark.tracing": "Tracing",
      "enchantment.bulwark.tracing.desc": "Upon being hit whilst wearing the Eclipse Mask, marks the attacker with glowing to trace opponents.",
 
+     "enchantment.bulwark.quickfooted": "Quickfooted",
+     "enchantment.bulwark.quickfooted.desc": "Wearing of the Eclipse Mask grants a small speed increase, along with allowing the user to walk on powder snow.",
+
      "item.bulwark.comically_large_lollipop": "Comically Large Lollipop",
      "item.bulwark.dentist": "Dentist",
      "item.bulwark.dentist.desc": "A true achievement in modern weaponry...",

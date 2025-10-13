@@ -2,11 +2,16 @@ package bul.chemthunder.bulwark.item;
 
 import bul.chemthunder.bulwark.index.BulwarkItems;
 import bul.chemthunder.bulwark.index.BulwarkMasks;
+import net.minecraft.component.type.AttributeModifierSlot;
+import net.minecraft.component.type.AttributeModifiersComponent;
 import net.minecraft.component.type.TooltipDisplayComponent;
+import net.minecraft.entity.attribute.EntityAttributeModifier;
+import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
 
 import java.util.function.Consumer;
 
@@ -36,5 +41,20 @@ public class EclipseMaskItem extends Item {
         if (stack.isOf(BulwarkMasks.WARDEN_MASK)) {
             textConsumer.accept(Text.translatable("item.bulwark.mask.warden").styled(style -> style.withColor(0x29dfeb)));
         }
+    }
+
+    public static AttributeModifiersComponent createAttributeModifiers() {
+        return AttributeModifiersComponent.builder()
+                .add(
+                        EntityAttributes.ARMOR,
+                        new EntityAttributeModifier(BASE_ATTACK_DAMAGE_MODIFIER_ID, 2f, EntityAttributeModifier.Operation.ADD_VALUE),
+                        AttributeModifierSlot.HEAD
+                )
+                .add(
+                        EntityAttributes.ARMOR_TOUGHNESS,
+                        new EntityAttributeModifier(BASE_ATTACK_SPEED_MODIFIER_ID, -2.5f, EntityAttributeModifier.Operation.ADD_VALUE),
+                        AttributeModifierSlot.HEAD
+                )
+                .build();
     }
 }
