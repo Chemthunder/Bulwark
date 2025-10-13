@@ -15,6 +15,7 @@ public interface BulwarkEnchantments {
     Map<ComponentType<?>, Identifier> ENCHANTMENT_EFFECTS = new LinkedHashMap<>();
 
     ComponentType<Unit> TRACING = create("tracing", builder -> builder.codec(Unit.CODEC));
+    ComponentType<Unit> QUICKFOOTED = create("quickfooted", builder -> builder.codec(Unit.CODEC));
 
     private static <T> ComponentType<T> create(String id, UnaryOperator<ComponentType.Builder<T>> builderOperator) {
         ComponentType<T> componentType = builderOperator.apply(ComponentType.builder()).build();

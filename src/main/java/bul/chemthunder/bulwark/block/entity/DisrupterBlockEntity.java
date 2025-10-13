@@ -56,7 +56,7 @@ public class DisrupterBlockEntity extends BlockEntity {
                 if (!entity.getOffHandStack().isOf(BulwarkItems.OPERATOR_KEY) && !disrupter.ownerUuids.contains(entity.getUuid()) && world instanceof ServerWorld serverWorld && !entity.isInvulnerableTo(serverWorld, BulwarkDamageSources.radiation(entity))) {
                     if (disrupter.use) {
                         if (aboveState.isOf(Blocks.SCULK_SHRIEKER)) {
-                            entity.damage(serverWorld, BulwarkDamageSources.radiation(entity), 6);
+                            entity.damage(serverWorld, BulwarkDamageSources.radiation(entity), 2.5f);
                             serverWorld.spawnParticles(
                                     ParticleTypes.SCULK_SOUL,
                                     entity.getX(),
