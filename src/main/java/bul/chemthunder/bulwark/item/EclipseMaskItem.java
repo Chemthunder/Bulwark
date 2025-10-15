@@ -44,6 +44,9 @@ public class EclipseMaskItem extends Item {
         if (stack.isOf(BulwarkMasks.JUDGES_VEIL)) {
             textConsumer.accept(Text.translatable("item.bulwark.mask.judge").styled(style -> style.withColor(0x036d85)));
         }
+        if (stack.isOf(BulwarkMasks.GNARP_MASK)) {
+            textConsumer.accept(Text.translatable("item.bulwark.mask.gnarp").styled(style -> style.withColor(0x87c967)));
+        }
     }
 
     public static AttributeModifiersComponent createAttributeModifiers() {

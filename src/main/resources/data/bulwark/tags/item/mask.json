@@ -5,6 +5,9 @@
           "bulwark:warden_mask",
           "bulwark:faker_mask",
           "bulwark:silly_mask",
-          "bulwark:red_shade_mask"
+          "bulwark:red_shade_mask",
+          "bulwark:judges_veil",
+          "bulwark:gnarp_mask",
+          "bulwark:warden_mask"
      ]
 }

@@ -77,6 +77,7 @@
      "name.silly": "The Hostess",
      "name.warden": "The Warden",
      "name.judge": "The Judge",
+     "name.gnarp": "The Cat",
 
      "item.bulwark.mask": "Eclipse Mask",
      "item.bulwark.mask.eclipse": "Mortem",
@@ -85,6 +86,7 @@
      "item.bulwark.mask.silly": "SILLYYYY :3",
      "item.bulwark.mask.warden": "Warden",
      "item.bulwark.mask.judge": "Judge's Veil",
+     "item.bulwark.mask.gnarp": "Squishy Goober :3",
 
      "text.lollipop_use": "yummers"
 }
