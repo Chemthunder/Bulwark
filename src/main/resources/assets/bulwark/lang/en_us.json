@@ -57,12 +57,6 @@
      "item.bulwark.klapmallow_stick": "Klapmallow on a Stick",
      "item.bulwark.klaproth": "Klaproth",
      "item.bulwark.klaproth_candy": "Klaproth Candy",
-     "item.bulwark.mask": "Eclipse Mask",
-     "item.bulwark.mask.eclipse": "Mortem",
-     "item.bulwark.mask.faker": "Faker",
-     "item.bulwark.mask.red": "Red Shade",
-     "item.bulwark.mask.silly": "SILLYYYY :3",
-     "item.bulwark.mask.warden": "Warden",
      "item.bulwark.operator_key": "Operator Key",
      "item.bulwark.operator_key.desc": "An Administrator item to avoid being damaged / targeted by Disrupters",
      "item.bulwark.poisoned_fish": "Bucket of Poisoned Fish",
@@ -82,6 +76,15 @@
      "name.shade": "Shady Business",
      "name.silly": "The Hostess",
      "name.warden": "The Warden",
+     "name.judge": "The Judge",
+
+     "item.bulwark.mask": "Eclipse Mask",
+     "item.bulwark.mask.eclipse": "Mortem",
+     "item.bulwark.mask.faker": "Faker",
+     "item.bulwark.mask.red": "Red Shade",
+     "item.bulwark.mask.silly": "SILLYYYY :3",
+     "item.bulwark.mask.warden": "Warden",
+     "item.bulwark.mask.judge": "Judge's Veil",
 
      "text.lollipop_use": "yummers"
 }

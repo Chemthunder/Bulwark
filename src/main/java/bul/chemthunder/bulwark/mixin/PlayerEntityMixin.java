@@ -39,6 +39,9 @@ public abstract class PlayerEntityMixin extends LivingEntity {
         if (player.getEquippedStack(EquipmentSlot.HEAD).isOf(BulwarkMasks.WARDEN_MASK)) {
             return Text.translatable("name.warden").withColor(0x29dfeb).formatted(Formatting.ITALIC);
         }
+        if (player.getEquippedStack(EquipmentSlot.HEAD).isOf(BulwarkMasks.JUDGES_VEIL)) {
+            return Text.translatable("name.judge").withColor(0x036d85).formatted(Formatting.ITALIC);
+        }
         return original;
     }
 }

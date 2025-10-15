@@ -45,6 +45,14 @@ public interface BulwarkMasks {
             .attributeModifiers(EclipseMaskItem.createAttributeModifiers())
     );
 
+    Item JUDGES_VEIL = create("judges_veil", EclipseMaskItem::new, new AcornItemSettings()
+            .enchantable(5)
+            .fireproof()
+            .maxCount(1)
+            .equippableUnswappable(EquipmentSlot.HEAD)
+            .attributeModifiers(EclipseMaskItem.createAttributeModifiers())
+    );
+
     static Item create(String name, Function<Item.Settings, Item> factory, Item.Settings settings) {
         return Items.register(RegistryKey.of(RegistryKeys.ITEM, Bulwark.id(name)), factory, settings);
     }

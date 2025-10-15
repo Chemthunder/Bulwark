@@ -32,5 +32,6 @@ public interface MasksItemGroup {
         itemGroup.add(BulwarkMasks.RED_SHADE_MASK);
         itemGroup.add(BulwarkMasks.SILLY_MASK);
         itemGroup.add(BulwarkMasks.WARDEN_MASK);
+        itemGroup.add(BulwarkMasks.JUDGES_VEIL);
     }
 }

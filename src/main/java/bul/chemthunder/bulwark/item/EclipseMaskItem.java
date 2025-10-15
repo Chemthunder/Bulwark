@@ -41,6 +41,9 @@ public class EclipseMaskItem extends Item {
         if (stack.isOf(BulwarkMasks.WARDEN_MASK)) {
             textConsumer.accept(Text.translatable("item.bulwark.mask.warden").styled(style -> style.withColor(0x29dfeb)));
         }
+        if (stack.isOf(BulwarkMasks.JUDGES_VEIL)) {
+            textConsumer.accept(Text.translatable("item.bulwark.mask.judge").styled(style -> style.withColor(0x036d85)));
+        }
     }
 
     public static AttributeModifiersComponent createAttributeModifiers() {
