@@ -16,13 +16,13 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(BoneMealItem.class)
-public abstract class BoneMealMixin extends Item {
-    public BoneMealMixin(Settings settings) {
+public abstract class BoneMealItemMixin extends Item {
+    public BoneMealItemMixin(Settings settings) {
         super(settings);
     }
 
     @Inject(method = "useOnBlock", at = @At("HEAD"))
-    private void useOnBlock(ItemUsageContext context, CallbackInfoReturnable<ActionResult> cir) {
+    private void bulwark$overrideUseOnBlock(ItemUsageContext context, CallbackInfoReturnable<ActionResult> cir) {
         PlayerEntity player = context.getPlayer();
         BlockPos belowPos = context.getBlockPos().down();
         World world = context.getWorld();

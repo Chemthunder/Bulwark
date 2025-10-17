@@ -51,6 +51,8 @@ public interface BulwarkItemGroups {
         itemGroup.add(BulwarkItems.KLAPMALLOW_STICK);
         itemGroup.add(BulwarkItems.ROASTED_KLAPMALLOW);
         itemGroup.add(BulwarkItems.ROASTED_KLAPMALLOW_STICK);
+        itemGroup.addAfter(BulwarkItems.KLAPROTH, BulwarkItems.KLAPROTH_CHUNK);
+        itemGroup.addAfter(BulwarkItems.KLAPROTH, BulwarkItems.KLAPROTH_PLATING);
 
         //testing
 //        itemGroup.add(BulwarkBlocks.BUDDING_KLAPROTH);

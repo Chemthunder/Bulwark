@@ -2,6 +2,7 @@ package bul.chemthunder.bulwark.block.entity;
 
 import bul.chemthunder.bulwark.index.BulwarkBlockEntities;
 import bul.chemthunder.bulwark.index.BulwarkBlocks;
+import bul.chemthunder.bulwark.index.BulwarkItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -10,6 +11,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.listener.ClientPlayPacketListener;
 import net.minecraft.network.packet.Packet;
@@ -69,28 +71,34 @@ public class RestrictorBlockEntity extends BlockEntity {
 
             for (Entity entity : entities) {
                 if (restrictor.use) {
-                    if (aboveState.isOf(Blocks.LODESTONE)) {
-                        if (!entity.isSneaking()) {
-                            entity.onLanding();
-                            entity.setVelocity(entity.getVelocity().x, 0, entity.getVelocity().z);
-                            entity.addVelocity(entity.getRotationVector().x * 0.3, 1, entity.getRotationVector().z * 0.3);
-                            entity.velocityModified = true;
+                    if (entity instanceof PlayerEntity player) {
+                        if (player.getInventory().contains(BulwarkItems.OPERATOR_KEY.getDefaultStack())) {
+
                         }
-                    } else if (aboveState.isOf(Blocks.IRON_BLOCK)) {
-                        if (!entity.isSneaking()) {
-                            entity.onLanding();
-                            entity.setVelocity(entity.getVelocity().x, 0, entity.getVelocity().z);
-                            entity.addVelocity(entity.getRotationVector().x * 0.3, -1, entity.getRotationVector().z * 0.3);
-                            entity.velocityModified = true;
-                        }
-                    } else if (aboveState.isOf(Blocks.SCULK_CATALYST) && entity instanceof LivingEntity living) {
-                        if (!entity.isSneaking()) {
-                            living.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 40, 1));
-                        }
-                    } else if (aboveState.isIn(BlockTags.AIR)) {
-                        if (!entity.isSneaking()) {
-                            entity.setVelocity(area.getCenter().subtract(entity.getPos()).multiply(-0.1));
-                            entity.velocityModified = true;
+                    } else {
+                        if (aboveState.isOf(Blocks.LODESTONE)) {
+                            if (!entity.isSneaking()) {
+                                entity.onLanding();
+                                entity.setVelocity(entity.getVelocity().x, 0, entity.getVelocity().z);
+                                entity.addVelocity(entity.getRotationVector().x * 0.3, 1, entity.getRotationVector().z * 0.3);
+                                entity.velocityModified = true;
+                            }
+                        } else if (aboveState.isOf(Blocks.IRON_BLOCK)) {
+                            if (!entity.isSneaking()) {
+                                entity.onLanding();
+                                entity.setVelocity(entity.getVelocity().x, 0, entity.getVelocity().z);
+                                entity.addVelocity(entity.getRotationVector().x * 0.3, -1, entity.getRotationVector().z * 0.3);
+                                entity.velocityModified = true;
+                            }
+                        } else if (aboveState.isOf(Blocks.SCULK_CATALYST) && entity instanceof LivingEntity living) {
+                            if (!entity.isSneaking()) {
+                                living.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 40, 1));
+                            }
+                        } else if (aboveState.isIn(BlockTags.AIR)) {
+                            if (!entity.isSneaking()) {
+                                entity.setVelocity(area.getCenter().subtract(entity.getPos()).multiply(-0.1));
+                                entity.velocityModified = true;
+                            }
                         }
                     }
                 }

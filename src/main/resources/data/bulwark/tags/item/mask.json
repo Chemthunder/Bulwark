@@ -11,6 +11,8 @@
           "bulwark:warden_mask",
           "bulwark:kitsune_mask",
           "bulwark:benefactor_mask",
-          "bulwark:human_mask"
+          "bulwark:human_mask",
+          "bulwark:rifters_mask",
+          "bulwark:gored_mask"
      ]
 }

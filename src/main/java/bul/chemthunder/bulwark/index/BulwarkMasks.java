@@ -93,6 +93,22 @@ public interface BulwarkMasks {
             .attributeModifiers(EclipseMaskItem.createAttributeModifiers())
     );
 
+    Item RIFTERS_MASK = create("rifters_mask", EclipseMaskItem::new, new AcornItemSettings()
+            .enchantable(5)
+            .fireproof()
+            .maxCount(1)
+            .equippableUnswappable(EquipmentSlot.HEAD)
+            .attributeModifiers(EclipseMaskItem.createAttributeModifiers())
+    );
+
+    Item GORED_MASK = create("gored_mask", EclipseMaskItem::new, new AcornItemSettings()
+            .enchantable(5)
+            .fireproof()
+            .maxCount(1)
+            .equippableUnswappable(EquipmentSlot.HEAD)
+            .attributeModifiers(EclipseMaskItem.createAttributeModifiers())
+    );
+
     Item TAB_ICON = create("tab_icon", Item::new, new AcornItemSettings()
             .maxCount(1)
     );

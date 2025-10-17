@@ -37,5 +37,7 @@ public interface MasksItemGroup {
         itemGroup.add(BulwarkMasks.KITSUNE_MASK);
         itemGroup.add(BulwarkMasks.BENEFACTOR_MASK);
         itemGroup.add(BulwarkMasks.HUMAN_MASK);
+        itemGroup.add(BulwarkMasks.RIFTERS_MASK);
+        itemGroup.add(BulwarkMasks.GORED_MASK);
     }
 }

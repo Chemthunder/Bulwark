@@ -109,6 +109,8 @@ public interface BulwarkItems {
         modifyItemNameColor(Item.fromBlock(BulwarkBlocks.DISRUPTER), 0xb02065);
         modifyItemNameColor(Item.fromBlock(BulwarkBlocks.RESTRICTOR), 0xb02065);
         modifyItemNameColor(KLAPROTH, 0x992d74);
+        modifyItemNameColor(KLAPROTH_CHUNK, 0x992d74);
+        modifyItemNameColor(KLAPROTH_PLATING, 0x992d74);
         modifyItemNameColor(Item.fromBlock(BulwarkBlocks.TAINTED_GLASS), 0xc394e1);
 
         modifyItemNameColor(DENTIST, 0xff64fd);
@@ -123,6 +125,4 @@ public interface BulwarkItems {
             entries.addAfter(Blocks.TEST_BLOCK, OPERATOR_KEY);
         });
     }
-
-
 }

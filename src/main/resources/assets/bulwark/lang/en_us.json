@@ -84,6 +84,7 @@
      "name.kitsune": "Mizaki TJ-Kun",
      "name.benefactor": "The Benefactor",
      "name.human": "i'm a human trust frfr",
+     "name.gored": "The Butcher",
 
      "item.bulwark.mask": "Eclipse Mask",
      "item.bulwark.mask.eclipse": "Mortem",
@@ -98,6 +99,8 @@
      "item.bulwark.mask.bloodied_1": "It's tattered and cut,",
      "item.bulwark.mask.bloodied_2": "spattered with blood not your own.",
      "item.bulwark.mask.human": "The design is very human (patent pending)",
+     "item.bulwark.mask.gored": "The Kitsune... mask?",
+     "item.bulwark.mask.rifter": "Why did I add this :sob:",
 
      "text.lollipop_use": "yummers",
      "text.disrupter.hostess.fuckyou": "F4ck y0u b1tch. -Hostess"

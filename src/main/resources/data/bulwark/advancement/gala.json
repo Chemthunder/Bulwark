@@ -39,6 +39,12 @@
                          },
                          {
                               "items": "bulwark:human_mask"
+                         },
+                         {
+                              "items": "bulwark:rifters_mask"
+                         },
+                         {
+                              "items": "bulwark:gored_mask"
                          }
                     ]
                }
