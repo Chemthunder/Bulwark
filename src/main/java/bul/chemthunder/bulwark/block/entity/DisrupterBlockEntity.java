@@ -94,7 +94,7 @@ public class DisrupterBlockEntity extends BlockEntity {
                             } else if (aboveState.isIn(BlockTags.AIR) || aboveState.getBlock().getDefaultState().isOpaque()) {
                                 if (!entity.isInCreativeMode()) {
                                     entity.damage(serverWorld, BulwarkDamageSources.radiation(entity), 0.3f);
-                                    entity.setVelocity(area.getCenter().subtract(entity.getPos()).multiply(-0.4));
+                                    entity.setVelocity(area.getCenter().subtract(entity.getPos()).multiply(-0.1));
                                     serverWorld.spawnParticles(
                                             Bulwark.DISRUPTER_HIT,
                                             entity.getX(),

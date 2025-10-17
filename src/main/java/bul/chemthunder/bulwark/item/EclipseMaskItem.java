@@ -73,7 +73,7 @@ public class EclipseMaskItem extends Item {
                 )
                 .add(
                         EntityAttributes.ARMOR_TOUGHNESS,
-                        new EntityAttributeModifier(BASE_ATTACK_SPEED_MODIFIER_ID, -2.5f, EntityAttributeModifier.Operation.ADD_VALUE),
+                        new EntityAttributeModifier(BASE_ATTACK_SPEED_MODIFIER_ID, -1.5f, EntityAttributeModifier.Operation.ADD_VALUE),
                         AttributeModifierSlot.HEAD
                 )
                 .build();
