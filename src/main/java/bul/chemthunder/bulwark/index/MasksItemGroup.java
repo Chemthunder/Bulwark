@@ -15,7 +15,7 @@ import net.minecraft.text.Text;
 public interface MasksItemGroup {
     RegistryKey<ItemGroup> GROUP_KEY = RegistryKey.of(RegistryKeys.ITEM_GROUP, Bulwark.id("masks"));
     ItemGroup ITEM_GROUP = FabricItemGroup.builder()
-            .icon(() -> new ItemStack(BulwarkItems.ECLIPSE_MASK))
+            .icon(() -> new ItemStack(BulwarkMasks.TAB_ICON))
             .displayName(Text.translatable("itemGroup.masks").styled(style -> style.withColor(0xbd00d8)))
             .build();
 
@@ -34,5 +34,8 @@ public interface MasksItemGroup {
         itemGroup.add(BulwarkMasks.WARDEN_MASK);
         itemGroup.add(BulwarkMasks.JUDGES_VEIL);
         itemGroup.add(BulwarkMasks.GNARP_MASK);
+        itemGroup.add(BulwarkMasks.KITSUNE_MASK);
+        itemGroup.add(BulwarkMasks.BENEFACTOR_MASK);
+        itemGroup.add(BulwarkMasks.HUMAN_MASK);
     }
 }

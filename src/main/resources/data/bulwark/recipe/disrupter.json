@@ -1,15 +1,15 @@
 {
      "type": "minecraft:crafting_shaped",
      "pattern": [
-          "DID",
-          "KRK",
-          "DID"
+          "PKP",
+          "PPP",
+          "DRD"
      ],
      "key": {
           "K": "bulwark:klaproth",
+          "P": "bulwark:klaproth_plating",
           "D": "minecraft:polished_deepslate",
-          "R": "minecraft:repeater",
-          "I": "minecraft:iron_ingot"
+          "R": "minecraft:repeater"
      },
      "result": {
           "id": "bulwark:disrupter",

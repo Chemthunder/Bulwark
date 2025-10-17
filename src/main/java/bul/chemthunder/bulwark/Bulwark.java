@@ -39,6 +39,7 @@ public class Bulwark implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
     public static final SimpleParticleType ACTINISM = FabricParticleTypes.simple();
     public static final SimpleParticleType DISRUPTER_HIT = FabricParticleTypes.simple();
+    public static final SimpleParticleType WARNING_PARTICLE = FabricParticleTypes.simple();
     public static final SimpleParticleType SPARKLE_BASE = FabricParticleTypes.simple();
     public static final SimpleParticleType SPARKLE_LUMI = FabricParticleTypes.simple();
     public static final SimpleParticleType SPARKLE_RED = FabricParticleTypes.simple();
@@ -100,6 +101,7 @@ public class Bulwark implements ModInitializer {
 
         Registry.register(Registries.PARTICLE_TYPE, Identifier.of(MOD_ID, "actinism"), ACTINISM);
         Registry.register(Registries.PARTICLE_TYPE, Identifier.of(MOD_ID, "disrupter_hit"), DISRUPTER_HIT);
+        Registry.register(Registries.PARTICLE_TYPE, Identifier.of(MOD_ID, "warning_particle"), WARNING_PARTICLE);
         Registry.register(Registries.PARTICLE_TYPE, Identifier.of(MOD_ID, "tube_sparkle_base"), SPARKLE_BASE);
         Registry.register(Registries.PARTICLE_TYPE, Identifier.of(MOD_ID, "tube_sparkle_lumi"), SPARKLE_LUMI);
         Registry.register(Registries.PARTICLE_TYPE, Identifier.of(MOD_ID, "tube_sparkle_red"), SPARKLE_RED);
@@ -109,11 +111,8 @@ public class Bulwark implements ModInitializer {
 
         FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
             builder.registerPotionRecipe(
-                    // Input potion.
                     Potions.WATER,
-                    // Ingredient
                     BulwarkItems.KLAPROTH,
-                    // Output potion.
                     Registries.POTION.getEntry(TATER_POTION)
             );
         });

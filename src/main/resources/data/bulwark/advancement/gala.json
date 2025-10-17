@@ -1,0 +1,52 @@
+{
+     "parent": "bulwark:root",
+     "display": {
+          "icon": {
+               "id": "bulwark:tab_icon"
+          },
+          "title": {
+               "translate": "advancements.bulwark.crowning_gala.title"
+          },
+          "description": {
+               "translate": "advancements.bulwark.crowning_gala.description"
+          }
+     },
+     "criteria": {
+          "plush": {
+               "trigger": "minecraft:inventory_changed",
+               "conditions": {
+                    "items": [
+                         {
+                              "items": "bulwark:eclipse_mask"
+                         },
+                         {
+                              "items": "bulwark:kitsune_mask"
+                         },
+                         {
+                              "items": "bulwark:gnarp_mask"
+                         },
+                         {
+                              "items": "bulwark:judges_veil"
+                         },
+                         {
+                              "items": "bulwark:faker_mask"
+                         },
+                         {
+                              "items": "bulwark:silly_mask"
+                         },
+                         {
+                              "items": "bulwark:warden_mask"
+                         },
+                         {
+                              "items": "bulwark:human_mask"
+                         }
+                    ]
+               }
+          }
+     },
+     "requirements": [
+          [
+               "plush"
+          ]
+     ]
+}

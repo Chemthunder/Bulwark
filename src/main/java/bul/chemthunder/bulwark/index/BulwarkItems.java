@@ -63,7 +63,8 @@ public interface BulwarkItems {
 
     Item POISONED_FISH = create("poisoned_fish", Item::new, new AcornItemSettings()
             .maxCount(1)
-            .food(new FoodComponent(4, 1, true)).useRemainder(Items.BUCKET));
+            .food(new FoodComponent(4, 1, true)).useRemainder(Items.BUCKET)
+    );
 
     Item COMICALLY_LARGE_LOLLIPOP = create("comically_large_lollipop", ComicallyLargeLollipopItem::new, new AcornItemSettings()
             .maxCount(1)
@@ -72,19 +73,31 @@ public interface BulwarkItems {
 
     Item KLAPMALLOW = create("klapmallow", KlapmallowItem::new, new AcornItemSettings()
             .maxCount(16)
-            .food(new FoodComponent(1, 0.5f, true)));
+            .food(new FoodComponent(1, 0.5f, true))
+    );
 
     Item KLAPMALLOW_STICK = create("klapmallow_stick", KlapmallowItem::new, new AcornItemSettings()
             .maxCount(1)
-            .food(new FoodComponent(3, 2, true)).useRemainder(Items.STICK));
+            .food(new FoodComponent(3, 2, true)).useRemainder(Items.STICK)
+    );
 
     Item ROASTED_KLAPMALLOW = create("roasted_klapmallow", KlapmallowItem::new, new AcornItemSettings()
             .maxCount(16)
-            .food(new FoodComponent(2, 1, true)));
+            .food(new FoodComponent(2, 1, true))
+    );
 
     Item ROASTED_KLAPMALLOW_STICK = create("roasted_klapmallow_stick", KlapmallowItem::new, new AcornItemSettings()
             .maxCount(1)
-            .food(new FoodComponent(5, 2.5f, true)).useRemainder(Items.STICK));
+            .food(new FoodComponent(5, 2.5f, true)).useRemainder(Items.STICK)
+    );
+
+    Item KLAPROTH_CHUNK = create("klaproth_chunk", KlaprothItem::new, new AcornItemSettings()
+            .fireproof()
+    );
+
+    Item KLAPROTH_PLATING = create("klaproth_plating", KlaprothItem::new, new AcornItemSettings()
+            .fireproof()
+    );
 
     static Item create(String name, Function<Item.Settings, Item> factory, Item.Settings settings) {
         return Items.register(RegistryKey.of(RegistryKeys.ITEM, Bulwark.id(name)), factory, settings);

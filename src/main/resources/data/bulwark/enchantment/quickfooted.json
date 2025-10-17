@@ -9,7 +9,10 @@
           "bulwark:silly_mask",
           "bulwark:warden_mask",
           "bulwark:judges_veil",
-          "bulwark:gnarp_mask"
+          "bulwark:gnarp_mask",
+          "bulwark:kitsune_mask",
+          "bulwark:benefactor_mask",
+          "bulwark:human_mask"
      ],
      "weight": 2,
      "max_level": 1,

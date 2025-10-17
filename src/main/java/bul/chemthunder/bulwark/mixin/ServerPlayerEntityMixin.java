@@ -45,5 +45,14 @@ public abstract class ServerPlayerEntityMixin extends PlayerEntity {
         if (player.getEquippedStack(EquipmentSlot.HEAD).isOf(BulwarkMasks.GNARP_MASK)) {
             cir.setReturnValue(Text.translatable("name.gnarp").withColor(0x87c967).formatted(Formatting.ITALIC));
         }
+        if (player.getEquippedStack(EquipmentSlot.HEAD).isOf(BulwarkMasks.KITSUNE_MASK)) {
+            cir.setReturnValue(Text.translatable("name.kitsune").withColor(0xD13328).formatted(Formatting.OBFUSCATED).formatted(Formatting.ITALIC));
+        }
+        if (player.getEquippedStack(EquipmentSlot.HEAD).isOf(BulwarkMasks.BENEFACTOR_MASK)) {
+            cir.setReturnValue(Text.translatable("name.benefactor").withColor(0x545E80));
+        }
+        if (player.getEquippedStack(EquipmentSlot.HEAD).isOf(BulwarkMasks.HUMAN_MASK)) {
+            cir.setReturnValue(Text.translatable("name.human").withColor(0xa81f1f));
+        }
     }
 }

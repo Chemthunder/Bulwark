@@ -1,47 +1,48 @@
 {
-  "schemaVersion": 1,
-  "id": "bulwark",
-  "version": "${version}",
-  "name": "Bulwark",
-  "description": "The Epitome of Home Defense",
-  "authors": [
-    "Chemthunder",
-    "KrimsonCinder"
-  ],
-  "contributors": [
-    "AcoYT (Code help)",
-    "ScarletOnTV (Playtester :3)",
-    "4kio (Playtester)",
-    "Mythorical (Playtester)",
-    "TurtleTime82 (Playtester)"
-  ],
-  "contact": {
-    "sources": "https://www.walmart.com/ip/Great-Value-Frozen-Raw-Small-Peeled-Deveined-Tail-off-Shrimp-12-oz-60-80-Count-per-lb/44391062?classType=VARIANT&athbdg=L1200&from=/search&adid=22222222220220085369&wmlspartner=wmtlabs&veh=sem&vtcWeb=aCCdfHY-_DoWybUFJrAQ6I&expiryTime=1759887021393&c=mWebSmartBanner"
-  },
-  "license": "Chemthunder License",
-  "icon": "assets/bulwark/icon.png",
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "bul.chemthunder.bulwark.Bulwark"
-    ],
-    "fabric-datagen": [
-      "bul.chemthunder.bulwark.BulwarkDataGenerator"
-    ],
-    "client": [
-      "bul.chemthunder.bulwark.BulwarkClient"
-    ]
-  },
-  "mixins": [
-    "bulwark.mixins.json"
-  ],
-  "depends": {
-    "fabricloader": ">=0.16.14",
-    "minecraft": "~1.21.5",
-    "java": ">=21",
-    "fabric-api": "*"
-  },
-  "suggests": {
-    "another-mod": "shwimp"
-  }
+     "schemaVersion": 1,
+     "id": "bulwark",
+     "version": "${version}",
+     "name": "Bulwark",
+     "description": "The Epitome of Home Defense",
+     "authors": [
+          "Chemthunder",
+          "KrimsonCinder"
+     ],
+     "contributors": [
+          "AcoYT (Code help)",
+          "ScarletOnTV (Playtester :3)",
+          "4kio (Playtester)",
+          "Mythorical (Playtester)",
+          "TurtleTime82 (Playtester)",
+          "WatchBox Team In General"
+     ],
+     "contact": {
+          "sources": "https://www.walmart.com/ip/Great-Value-Frozen-Raw-Small-Peeled-Deveined-Tail-off-Shrimp-12-oz-60-80-Count-per-lb/44391062?classType=VARIANT&athbdg=L1200&from=/search&adid=22222222220220085369&wmlspartner=wmtlabs&veh=sem&vtcWeb=aCCdfHY-_DoWybUFJrAQ6I&expiryTime=1759887021393&c=mWebSmartBanner"
+     },
+     "license": "Chemthunder License",
+     "icon": "assets/bulwark/icon.png",
+     "environment": "*",
+     "entrypoints": {
+          "main": [
+               "bul.chemthunder.bulwark.Bulwark"
+          ],
+          "fabric-datagen": [
+               "bul.chemthunder.bulwark.BulwarkDataGenerator"
+          ],
+          "client": [
+               "bul.chemthunder.bulwark.BulwarkClient"
+          ]
+     },
+     "mixins": [
+          "bulwark.mixins.json"
+     ],
+     "depends": {
+          "fabricloader": ">=0.16.14",
+          "minecraft": "~1.21.5",
+          "java": ">=21",
+          "fabric-api": "*"
+     },
+     "suggests": {
+          "another-mod": "shwimp"
+     }
 }

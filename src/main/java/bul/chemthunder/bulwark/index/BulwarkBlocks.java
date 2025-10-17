@@ -84,6 +84,11 @@ public interface BulwarkBlocks {
 
     Block KLAPROTH_PILLAR = createWithItem("klaproth_pillar", PillarBlock::new, AbstractBlock.Settings.copy(Blocks.QUARTZ_PILLAR));
 
+    Block FORG_STATUE = createWithItem("forg_statue", ForgStatueBlock::new, AbstractBlock.Settings.copy(Blocks.STONE)
+            .sounds(BlockSoundGroup.STONE)
+            .nonOpaque()
+    );
+
     static Block create(String name, Function<AbstractBlock.Settings, Block> factory, AbstractBlock.Settings settings) {
         return Blocks.register(RegistryKey.of(RegistryKeys.BLOCK, Bulwark.id(name)), factory, settings);
     }
@@ -113,7 +118,8 @@ public interface BulwarkBlocks {
                 RED_KLAPROTH_TUBE,
                 SILLY_KLAPROTH_TUBE,
                 SCULK_KLAPROTH_TUBE,
-                LUMINANT_KLAPROTH_TUBE
+                LUMINANT_KLAPROTH_TUBE,
+                FORG_STATUE
         );
     }
 }

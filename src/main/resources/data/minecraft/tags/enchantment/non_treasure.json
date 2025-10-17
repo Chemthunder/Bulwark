@@ -1,6 +1,7 @@
 {
      "replace": false,
      "values": [
-          "bulwark:tracing"
+          "bulwark:tracing",
+          "bulwark:quickfooted"
      ]
 }

@@ -35,6 +35,8 @@ public class KlaprothTubeBlock extends RodBlock {
     }
 
     public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
+        int chance = random.nextInt(2);
+
         Direction direction = (Direction)state.get(FACING);
         double d = (double)pos.getX() + 0.55 - (double)(random.nextFloat() * 0.1F);
         double e = (double)pos.getY() + 0.55 - (double)(random.nextFloat() * 0.1F);
@@ -42,19 +44,23 @@ public class KlaprothTubeBlock extends RodBlock {
         double g = (double)(0.4F - (random.nextFloat() + random.nextFloat()) * 0.4F);
         if (random.nextInt(5) == 0) {
             if (state.isOf(BulwarkBlocks.KLAPROTH_TUBE)) {
-                world.addParticleClient(Bulwark.DISRUPTER_HIT, d + (double) direction.getOffsetX() * g, e + (double) direction.getOffsetY() * g, f + (double) direction.getOffsetZ() * g, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005);
+                world.addParticleClient(Bulwark.SPARKLE_BASE, d + (double) direction.getOffsetX() * g, e + (double) direction.getOffsetY() * g, f + (double) direction.getOffsetZ() * g, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005);
             }
             if (state.isOf(BulwarkBlocks.LUMINANT_KLAPROTH_TUBE)) {
-                world.addParticleClient(ParticleTypes.FLASH, d + (double) direction.getOffsetX() * g, e + (double) direction.getOffsetY() * g, f + (double) direction.getOffsetZ() * g, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005);
+                world.addParticleClient(Bulwark.SPARKLE_LUMI, d + (double) direction.getOffsetX() * g, e + (double) direction.getOffsetY() * g, f + (double) direction.getOffsetZ() * g, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005);
             }
             if (state.isOf(BulwarkBlocks.SCULK_KLAPROTH_TUBE)) {
-                world.addParticleClient(ParticleTypes.SCULK_CHARGE_POP, d + (double) direction.getOffsetX() * g, e + (double) direction.getOffsetY() * g, f + (double) direction.getOffsetZ() * g, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005);
+                world.addParticleClient(Bulwark.SPARKLE_SCULK, d + (double) direction.getOffsetX() * g, e + (double) direction.getOffsetY() * g, f + (double) direction.getOffsetZ() * g, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005);
             }
             if (state.isOf(BulwarkBlocks.SILLY_KLAPROTH_TUBE)) {
-                world.addParticleClient(ParticleTypes.CHERRY_LEAVES, d + (double) direction.getOffsetX() * g, e + (double) direction.getOffsetY() * g, f + (double) direction.getOffsetZ() * g, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005);
+                if (chance == 0) {
+                    world.addParticleClient(Bulwark.SPARKLE_SILLY_1, d + (double) direction.getOffsetX() * g, e + (double) direction.getOffsetY() * g, f + (double) direction.getOffsetZ() * g, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005);
+                } else {
+                    world.addParticleClient(Bulwark.SPARKLE_SILLY_2, d + (double) direction.getOffsetX() * g, e + (double) direction.getOffsetY() * g, f + (double) direction.getOffsetZ() * g, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005);
+                }
             }
             if (state.isOf(BulwarkBlocks.RED_KLAPROTH_TUBE)) {
-                world.addParticleClient(ParticleTypes.HEART, d + (double) direction.getOffsetX() * g, e + (double) direction.getOffsetY() * g, f + (double) direction.getOffsetZ() * g, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005);
+                world.addParticleClient(Bulwark.SPARKLE_RED, d + (double) direction.getOffsetX() * g, e + (double) direction.getOffsetY() * g, f + (double) direction.getOffsetZ() * g, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005);
             }
         }
 
@@ -63,6 +69,4 @@ public class KlaprothTubeBlock extends RodBlock {
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(FACING);
     }
-
-
 }

@@ -3,6 +3,7 @@ package bul.chemthunder.bulwark.index;
 import bul.chemthunder.bulwark.Bulwark;
 import bul.chemthunder.bulwark.effect.ActinismEffect;
 import bul.chemthunder.bulwark.effect.InstabilityEffect;
+import bul.chemthunder.bulwark.effect.WarningEffect;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.registry.Registries;
@@ -15,6 +16,8 @@ public interface BulwarkStatusEffects {
     RegistryEntry<StatusEffect> ACTINISM = create("actinism", new ActinismEffect(StatusEffectCategory.NEUTRAL, 0xbd00d8));
 
     RegistryEntry<StatusEffect> INSTABILITY = create("instability", new InstabilityEffect(StatusEffectCategory.NEUTRAL, 0xff64fd));
+
+    RegistryEntry<StatusEffect> WARNING = create("warning", new WarningEffect(StatusEffectCategory.BENEFICIAL, 0xff64fd));
 
     private static RegistryEntry<StatusEffect> create(String name, StatusEffect statusEffect) {
         return Registry.registerReference(Registries.STATUS_EFFECT, Bulwark.id(name), statusEffect);

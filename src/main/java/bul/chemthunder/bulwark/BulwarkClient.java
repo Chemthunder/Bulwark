@@ -12,5 +12,12 @@ public class BulwarkClient implements ClientModInitializer {
 
         ParticleFactoryRegistry.getInstance().register(Bulwark.ACTINISM, EndRodParticle.Factory::new);
         ParticleFactoryRegistry.getInstance().register(Bulwark.DISRUPTER_HIT, EndRodParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(Bulwark.SPARKLE_LUMI, EndRodParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(Bulwark.SPARKLE_BASE, EndRodParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(Bulwark.SPARKLE_RED, EndRodParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(Bulwark.SPARKLE_SCULK, EndRodParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(Bulwark.SPARKLE_SILLY_1, EndRodParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(Bulwark.SPARKLE_SILLY_2, EndRodParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(Bulwark.WARNING_PARTICLE, EndRodParticle.Factory::new);
     }
 }

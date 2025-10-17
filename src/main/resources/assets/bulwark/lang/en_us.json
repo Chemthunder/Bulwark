@@ -7,8 +7,8 @@
      "advancement.bulwark.dissy.desc": "Begin your home defense system",
      "advancement.bulwark.fis": "Wall-Market Incident",
      "advancement.bulwark.fis.desc": "Obtain the forbidden fish",
-     "advancement.bulwark.mirror": "Mirror Mirror on the Wall-",
-     "advancement.bulwark.mirror.desc": "Obtain a Pocket-Mirror",
+     "advancements.bulwark.crowning_gala.title": "Crowning Gala",
+     "advancements.bulwark.crowning_gala.description": "Obtain every face of your Masquerade",
      "advancement.bulwark.root": "Bulwark",
      "advancement.bulwark.root.desc": ":3",
 
@@ -41,6 +41,7 @@
 
      "effect.bulwark.actinism": "Actinism",
      "effect.bulwark.instability": "Instability",
+     "effect.bulwark.warning": "Warning",
 
      "enchantment.bulwark.tracing": "Tracing",
      "enchantment.bulwark.tracing.desc": "Upon being hit whilst wearing the Eclipse Mask, marks the attacker with glowing to trace opponents.",
@@ -62,6 +63,8 @@
      "item.bulwark.poisoned_fish": "Bucket of Poisoned Fish",
      "item.bulwark.roasted_klapmallow": "Roasted Klapmallow",
      "item.bulwark.roasted_klapmallow_stick": "Roasted Klapmallow on a Stick",
+     "item.bulwark.klaproth_chunk": "Klaproth Chunk",
+     "item.bulwark.klaproth_plating": "Klaproth Encrusted Plating",
 
      "item.minecraft.lingering_potion.effect.actinism": "Lingering Potion of Distortion",
      "item.minecraft.potion.effect.actinism": "Potion of Distortion",
@@ -78,6 +81,9 @@
      "name.warden": "The Warden",
      "name.judge": "The Judge",
      "name.gnarp": "The Cat",
+     "name.kitsune": "Mizaki TJ-Kun",
+     "name.benefactor": "The Benefactor",
+     "name.human": "i'm a human trust frfr",
 
      "item.bulwark.mask": "Eclipse Mask",
      "item.bulwark.mask.eclipse": "Mortem",
@@ -87,6 +93,12 @@
      "item.bulwark.mask.warden": "Warden",
      "item.bulwark.mask.judge": "Judge's Veil",
      "item.bulwark.mask.gnarp": "Squishy Goober :3",
+     "item.bulwark.mask.kitsune": "The Kitsune Mask",
+     "item.bulwark.mask.benefactor": "Eyes from Above",
+     "item.bulwark.mask.bloodied_1": "It's tattered and cut,",
+     "item.bulwark.mask.bloodied_2": "spattered with blood not your own.",
+     "item.bulwark.mask.human": "The design is very human (patent pending)",
 
-     "text.lollipop_use": "yummers"
+     "text.lollipop_use": "yummers",
+     "text.disrupter.hostess.fuckyou": "F4ck y0u b1tch. -Hostess"
 }

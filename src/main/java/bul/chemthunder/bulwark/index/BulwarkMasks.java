@@ -61,6 +61,42 @@ public interface BulwarkMasks {
             .attributeModifiers(EclipseMaskItem.createAttributeModifiers())
     );
 
+    Item KITSUNE_MASK = create("kitsune_mask", EclipseMaskItem::new, new AcornItemSettings()
+            .enchantable(5)
+            .fireproof()
+            .maxCount(1)
+            .equippableUnswappable(EquipmentSlot.HEAD)
+            .attributeModifiers(EclipseMaskItem.createAttributeModifiers())
+    );
+
+    Item BENEFACTOR_MASK = create("benefactor_mask", EclipseMaskItem::new, new AcornItemSettings()
+            .enchantable(5)
+            .fireproof()
+            .maxCount(1)
+            .equippableUnswappable(EquipmentSlot.HEAD)
+            .attributeModifiers(EclipseMaskItem.createAttributeModifiers())
+    );
+
+    Item BLOODIED_MASK = create("bloodied_mask", EclipseMaskItem::new, new AcornItemSettings()
+            .enchantable(5)
+            .fireproof()
+            .maxCount(1)
+            .equippableUnswappable(EquipmentSlot.HEAD)
+            .attributeModifiers(EclipseMaskItem.createAttributeModifiers())
+    );
+
+    Item HUMAN_MASK = create("human_mask", EclipseMaskItem::new, new AcornItemSettings()
+            .enchantable(5)
+            .fireproof()
+            .maxCount(1)
+            .equippableUnswappable(EquipmentSlot.HEAD)
+            .attributeModifiers(EclipseMaskItem.createAttributeModifiers())
+    );
+
+    Item TAB_ICON = create("tab_icon", Item::new, new AcornItemSettings()
+            .maxCount(1)
+    );
+
     static Item create(String name, Function<Item.Settings, Item> factory, Item.Settings settings) {
         return Items.register(RegistryKey.of(RegistryKeys.ITEM, Bulwark.id(name)), factory, settings);
     }

@@ -5,10 +5,12 @@ import bul.chemthunder.bulwark.index.BulwarkMasks;
 import net.minecraft.component.type.AttributeModifierSlot;
 import net.minecraft.component.type.AttributeModifiersComponent;
 import net.minecraft.component.type.TooltipDisplayComponent;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemStackSet;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
@@ -46,6 +48,19 @@ public class EclipseMaskItem extends Item {
         }
         if (stack.isOf(BulwarkMasks.GNARP_MASK)) {
             textConsumer.accept(Text.translatable("item.bulwark.mask.gnarp").styled(style -> style.withColor(0x87c967)));
+        }
+        if (stack.isOf(BulwarkMasks.KITSUNE_MASK)) {
+            textConsumer.accept(Text.translatable("item.bulwark.mask.kitsune").styled(style -> style.withColor(0xD13328)));
+        }
+        if (stack.isOf(BulwarkMasks.BENEFACTOR_MASK)) {
+            textConsumer.accept(Text.translatable("item.bulwark.mask.benefactor").styled(style -> style.withColor(0x545E80)));
+        }
+        if (stack.isOf(BulwarkMasks.BLOODIED_MASK)) {
+            textConsumer.accept(Text.translatable("item.bulwark.mask.bloodied_1").styled(style -> style.withColor(0x3f131c)));
+            textConsumer.accept(Text.translatable("item.bulwark.mask.bloodied_2").styled(style -> style.withColor(0x3f131c)));
+        }
+        if (stack.isOf(BulwarkMasks.HUMAN_MASK)) {
+            textConsumer.accept(Text.translatable("item.bulwark.mask.human").styled(style -> style.withColor(0xa81f1f)));
         }
     }
 
