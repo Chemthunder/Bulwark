@@ -21,7 +21,7 @@ public abstract class ServerPlayerEntityMixin extends PlayerEntity {
         super(world, pos, yaw, gameProfile);
     }
 
-    @Inject(method = "getPlayerListName", at = @At("TAIL"), cancellable = true)
+    @Inject(method = "getPlayerListName", at = @At("HEAD"), cancellable = true)
     private void replaceNameOnTabList(CallbackInfoReturnable<Text> cir) {
         ServerPlayerEntity player = (ServerPlayerEntity)(Object)this;
         if (player.getEquippedStack(EquipmentSlot.HEAD).isOf(BulwarkItems.ECLIPSE_MASK)) {

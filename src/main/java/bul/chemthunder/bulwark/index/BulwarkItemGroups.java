@@ -43,6 +43,7 @@ public interface BulwarkItemGroups {
         itemGroup.add(BulwarkBlocks.RED_KLAPROTH_TUBE);
         itemGroup.add(BulwarkBlocks.SCULK_KLAPROTH_TUBE);
         itemGroup.add(BulwarkBlocks.LUMINANT_KLAPROTH_TUBE);
+        itemGroup.add(BulwarkBlocks.GLOWING_KLAPROTH_TUBE);
         itemGroup.add(BulwarkBlocks.KLAPROTH_BLOCK);
         itemGroup.add(BulwarkBlocks.CUT_KLAPROTH_BLOCK);
         itemGroup.add(BulwarkBlocks.KLAPROTH_PILLAR);

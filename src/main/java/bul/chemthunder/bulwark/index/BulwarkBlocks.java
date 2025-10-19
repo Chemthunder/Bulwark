@@ -67,6 +67,8 @@ public interface BulwarkBlocks {
 
     Block KLAPROTH_CLUSTER = createWithItem("klaproth_cluster", KlaprothClusterBlock::new, AbstractBlock.Settings.copy(Blocks.AMETHYST_CLUSTER));
 
+
+    // tube
     Block KLAPROTH_TUBE = createWithItem("klaproth_tube", KlaprothTubeBlock::new, AbstractBlock.Settings.copy(Blocks.LANTERN).strength(3.5F));
 
     Block SCULK_KLAPROTH_TUBE = createWithItem("sculk_klaproth_tube", KlaprothTubeBlock::new, AbstractBlock.Settings.copy(Blocks.LANTERN).strength(3.5F));
@@ -76,6 +78,12 @@ public interface BulwarkBlocks {
     Block SILLY_KLAPROTH_TUBE = createWithItem("silly_klaproth_tube", KlaprothTubeBlock::new, AbstractBlock.Settings.copy(Blocks.LANTERN).strength(3.5F));
 
     Block RED_KLAPROTH_TUBE = createWithItem("red_klaproth_tube", KlaprothTubeBlock::new, AbstractBlock.Settings.copy(Blocks.LANTERN).strength(3.5F));
+
+    Block EXOTIC_KLAPROTH_TUBE = createWithItem("exotic_klaproth_tube", KlaprothTubeBlock::new, AbstractBlock.Settings.copy(Blocks.LANTERN).strength(3.5f));
+
+    Block ORANGE_KLAPROTH_TUBE = createWithItem("orange_klaproth_tube", KlaprothTubeBlock::new, AbstractBlock.Settings.copy(Blocks.LANTERN).strength(3.5f));
+
+    Block GLOWING_KLAPROTH_TUBE = createWithItem("glowing_klaproth_tube", KlaprothTubeBlock::new, AbstractBlock.Settings.copy(Blocks.LANTERN).strength(3.5f));
 
     // klaproth variants
     Block KLAPROTH_BLOCK = createWithItem("klaproth_block", Block::new, AbstractBlock.Settings.copy(Blocks.QUARTZ_BLOCK));

@@ -46,6 +46,8 @@ public class Bulwark implements ModInitializer {
     public static final SimpleParticleType SPARKLE_SCULK = FabricParticleTypes.simple();
     public static final SimpleParticleType SPARKLE_SILLY_1 = FabricParticleTypes.simple();
     public static final SimpleParticleType SPARKLE_SILLY_2 = FabricParticleTypes.simple();
+    public static final SimpleParticleType SPARKLE_GLOWING = FabricParticleTypes.simple();
+    public static final SimpleParticleType SPARKLE_ORANGE = FabricParticleTypes.simple();
 
     public static final Potion TATER_POTION =
             Registry.register(
@@ -108,6 +110,8 @@ public class Bulwark implements ModInitializer {
         Registry.register(Registries.PARTICLE_TYPE, Identifier.of(MOD_ID, "tube_sparkle_sculk"), SPARKLE_SCULK);
         Registry.register(Registries.PARTICLE_TYPE, Identifier.of(MOD_ID, "tube_sparkle_silly_1"), SPARKLE_SILLY_1);
         Registry.register(Registries.PARTICLE_TYPE, Identifier.of(MOD_ID, "tube_sparkle_silly_2"), SPARKLE_SILLY_2);
+        Registry.register(Registries.PARTICLE_TYPE, Identifier.of(MOD_ID, "tube_sparkle_glowing"), SPARKLE_GLOWING);
+        Registry.register(Registries.PARTICLE_TYPE, Identifier.of(MOD_ID, "tube_sparkle_orange"), SPARKLE_ORANGE);
 
         FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
             builder.registerPotionRecipe(

@@ -102,6 +102,7 @@ public abstract class InGameHudMixin {
             ci.cancel();
         }
     }
+
     @WrapOperation(
             method = {"drawHeart"},
             at = {@At(

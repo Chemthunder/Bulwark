@@ -115,6 +115,7 @@ public interface BulwarkItems {
 
         modifyItemNameColor(DENTIST, 0xff64fd);
 
+        modifyItemNameColor(Item.fromBlock(BulwarkBlocks.GLOWING_KLAPROTH_TUBE), 0x37e2ca);
         modifyItemNameColor(Item.fromBlock(BulwarkBlocks.LUMINANT_KLAPROTH_TUBE), 0xffbc5e);
         modifyItemNameColor(Item.fromBlock(BulwarkBlocks.RED_KLAPROTH_TUBE), 0xfd4b57);
         modifyItemNameColor(Item.fromBlock(BulwarkBlocks.SCULK_KLAPROTH_TUBE), 0x009295);
