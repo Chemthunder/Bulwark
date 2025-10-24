@@ -2,7 +2,6 @@ package bul.chemthunder.bulwark.block;
 
 import bul.chemthunder.bulwark.index.BulwarkBlocks;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.TransparentBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Items;

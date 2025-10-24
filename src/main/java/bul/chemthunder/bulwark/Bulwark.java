@@ -2,7 +2,6 @@ package bul.chemthunder.bulwark;
 
 import bul.chemthunder.bulwark.datagen.BulwarkItemTagProvider;
 import bul.chemthunder.bulwark.index.*;
-import com.google.common.collect.ImmutableSet;
 import net.acoyt.acornlib.api.ALib;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
@@ -25,8 +24,6 @@ import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
-import net.minecraft.world.poi.PointOfInterest;
-import net.minecraft.world.poi.PointOfInterestType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

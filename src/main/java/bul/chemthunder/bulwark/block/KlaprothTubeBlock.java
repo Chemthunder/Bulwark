@@ -8,7 +8,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.RodBlock;
 import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.particle.ParticleTypes;
 import net.minecraft.state.StateManager;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -62,9 +61,9 @@ public class KlaprothTubeBlock extends RodBlock {
             if (state.isOf(BulwarkBlocks.RED_KLAPROTH_TUBE)) {
                 world.addParticleClient(Bulwark.SPARKLE_RED, d + (double) direction.getOffsetX() * g, e + (double) direction.getOffsetY() * g, f + (double) direction.getOffsetZ() * g, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005);
             }
-            if (state.isOf(BulwarkBlocks.GLOWING_KLAPROTH_TUBE)) {
-                world.addParticleClient(Bulwark.SPARKLE_GLOWING, d + (double) direction.getOffsetX() * g, e + (double) direction.getOffsetY() * g, f + (double) direction.getOffsetZ() * g, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005);
-            }
+//            if (state.isOf(BulwarkBlocks.GLOWING_KLAPROTH_TUBE)) {
+//                world.addParticleClient(Bulwark.SPARKLE_GLOWING, d + (double) direction.getOffsetX() * g, e + (double) direction.getOffsetY() * g, f + (double) direction.getOffsetZ() * g, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005, random.nextGaussian() * 0.005);
+//            }
         }
     }
 

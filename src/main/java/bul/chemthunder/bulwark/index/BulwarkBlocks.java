@@ -79,11 +79,11 @@ public interface BulwarkBlocks {
 
     Block RED_KLAPROTH_TUBE = createWithItem("red_klaproth_tube", KlaprothTubeBlock::new, AbstractBlock.Settings.copy(Blocks.LANTERN).strength(3.5F));
 
-    Block EXOTIC_KLAPROTH_TUBE = createWithItem("exotic_klaproth_tube", KlaprothTubeBlock::new, AbstractBlock.Settings.copy(Blocks.LANTERN).strength(3.5f));
-
-    Block ORANGE_KLAPROTH_TUBE = createWithItem("orange_klaproth_tube", KlaprothTubeBlock::new, AbstractBlock.Settings.copy(Blocks.LANTERN).strength(3.5f));
-
-    Block GLOWING_KLAPROTH_TUBE = createWithItem("glowing_klaproth_tube", KlaprothTubeBlock::new, AbstractBlock.Settings.copy(Blocks.LANTERN).strength(3.5f));
+//    Block EXOTIC_KLAPROTH_TUBE = createWithItem("exotic_klaproth_tube", KlaprothTubeBlock::new, AbstractBlock.Settings.copy(Blocks.LANTERN).strength(3.5f));
+//
+//    Block ORANGE_KLAPROTH_TUBE = createWithItem("orange_klaproth_tube", KlaprothTubeBlock::new, AbstractBlock.Settings.copy(Blocks.LANTERN).strength(3.5f));
+//
+//    Block GLOWING_KLAPROTH_TUBE = createWithItem("glowing_klaproth_tube", KlaprothTubeBlock::new, AbstractBlock.Settings.copy(Blocks.LANTERN).strength(3.5f));
 
     // klaproth variants
     Block KLAPROTH_BLOCK = createWithItem("klaproth_block", Block::new, AbstractBlock.Settings.copy(Blocks.QUARTZ_BLOCK));
@@ -91,11 +91,11 @@ public interface BulwarkBlocks {
     Block CUT_KLAPROTH_BLOCK = createWithItem("cut_klaproth_block", Block::new, AbstractBlock.Settings.copy(Blocks.QUARTZ_BLOCK));
 
     Block KLAPROTH_PILLAR = createWithItem("klaproth_pillar", PillarBlock::new, AbstractBlock.Settings.copy(Blocks.QUARTZ_PILLAR));
-
-    Block FORG_STATUE = createWithItem("forg_statue", ForgStatueBlock::new, AbstractBlock.Settings.copy(Blocks.STONE)
-            .sounds(BlockSoundGroup.STONE)
-            .nonOpaque()
-    );
+//
+//    Block FORG_STATUE = createWithItem("forg_statue", ForgStatueBlock::new, AbstractBlock.Settings.copy(Blocks.STONE)
+//            .sounds(BlockSoundGroup.STONE)
+//            .nonOpaque()
+//    );
 
     static Block create(String name, Function<AbstractBlock.Settings, Block> factory, AbstractBlock.Settings settings) {
         return Blocks.register(RegistryKey.of(RegistryKeys.BLOCK, Bulwark.id(name)), factory, settings);
@@ -126,8 +126,7 @@ public interface BulwarkBlocks {
                 RED_KLAPROTH_TUBE,
                 SILLY_KLAPROTH_TUBE,
                 SCULK_KLAPROTH_TUBE,
-                LUMINANT_KLAPROTH_TUBE,
-                FORG_STATUE
+                LUMINANT_KLAPROTH_TUBE
         );
     }
 }
